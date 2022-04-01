@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@100&display=swap');
+.container {
+   font-family: 'Vazirmatn', sans-serif;
+   margin-top: 100px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.text {
+   color: black;
+}

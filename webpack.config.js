@@ -45,6 +45,14 @@ module.exports = {
       rules: [
          { test: /\.(html)$/, use: ['html-loader'] },
          { test: /\.tsx?$/, loader: 'ts-loader' },
+         {
+            test: /\.(woff2?|eot|ttf|otf)$/i,
+            type: 'asset/resource',
+         },
+         {
+            test: /\.css$/i,
+            use: ['style-loader', 'css-loader'],
+         },
       ],
    },
 }
