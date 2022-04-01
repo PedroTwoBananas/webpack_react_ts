@@ -1,6 +1,9 @@
-const root = document.getElementById('root')
+import React from 'react'
+import ReactDOM from 'react-dom'
 
-const hi = document.createElement('h2')
-hi.textContent = 'привет'
-
-root.append(hi)
+ReactDOM.render(
+   <React.StrictMode>
+      <div>привет</div>
+   </React.StrictMode>,
+   document.getElementById('root')
+)
