@@ -50,6 +50,14 @@ module.exports = {
             type: 'asset/resource',
          },
          {
+            test: /\.(png|jpe?g|webp|git|svg|)$/i,
+            use: [
+               {
+                  loader: 'img-optimize-loader',
+               },
+            ],
+         },
+         {
             test: /\.css$/i,
             use: ['style-loader', 'css-loader'],
          },
